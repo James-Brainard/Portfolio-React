@@ -3,14 +3,14 @@
 function AboutCard({ information }) {
   return (
     <>
-      <h4 className="">
+      <h4>
         {information.title}
       </h4>
+      <h3 className="welcome-msg">
+        {information.welcome}
+      </h3>
       <p>
-        {information.placeholder}
-      </p>
-      <p>
-        {information.AboutmeDesc}
+        {information.aboutmeDesc}
       </p>
     </>
   )

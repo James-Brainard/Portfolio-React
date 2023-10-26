@@ -4,8 +4,8 @@ import AboutCard from '../../components/AboutMe'
 
 const aboutInfo = {
   title: "Aboutme",
-  placeholder: "Pic placeholder",
-  AboutmeDesc: "I'm a budding Software Developer with a background in insurance and sales. My coding journey started with completing the edX UCI Full Stack Web Development boot camp. I'm passionate about crafting efficient code and eager to merge my unique experiences to create user-centric web solutions. Open to new opportunities in web development and software development. Let's create something exceptional together!",
+  welcome: "Hello! Welcome to my site. It's nice to have you.",
+  aboutmeDesc: "I'm a budding Software Developer with a background in insurance and sales. My coding journey started with completing the edX UCI Full Stack Web Development boot camp. I'm passionate about crafting efficient code and eager to merge my unique experiences to create user-centric web solutions. Open to new opportunities in web development and software development. Let's create something exceptional together!",
 }
 
 function Aboutme() {
@@ -15,6 +15,9 @@ function Aboutme() {
       {/* <AboutCard headerText={aboutInfo.title} picPlaceholder={aboutInfo.placeholder} aboutMeDesc={aboutInfo.AboutmeDesc} />
     </> */}
     <AboutCard information={aboutInfo}/>
+    <p>
+      hi
+    </p>
     </>
   )
 }

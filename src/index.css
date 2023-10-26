@@ -37,7 +37,13 @@ h1 {
   line-height: 1.1;
 }
 
-h2, h4, p {
+.welcome-msg {
+  width: 600px;
+  text-align: center;
+}
+
+
+h2, h4, h5, p, ul {
   color: white !important;
 }
 

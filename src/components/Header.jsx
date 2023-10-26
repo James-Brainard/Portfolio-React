@@ -7,10 +7,10 @@ function Header() {
   return (
     <>
       <div className="mb-5 d-flex justify-content-between name_header">
-        <h2 className="pe-5">James Brainard</h2>
+        <h2 className="position-static pe-5">James Brainard</h2>
         {/* Move below into its own component */}
         <ul className="flex-row nav nav-tabs">
-          <li className="nav-item">
+          <li className="nav-fill nav-item">
             <Link
               to="/"
               className={currentPage === '/' ? 'nav-link active' : 'nav-link'} >

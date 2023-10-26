@@ -3,6 +3,7 @@
 // Front-end Proficiencies - <ul> containing my Front end pros
 // Back-end Proficiencies - <ul> containing my Back end pros
 import React from 'react'
+import './Resume.modules.css'
 
 function Resume() {
   return (
