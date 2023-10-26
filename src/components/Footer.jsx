@@ -5,11 +5,10 @@ import linkedinLogo from '../images/LinkedIn-icon.png';
 function Footer() {
   return (
     <>
-
-      <div className="d-flex justify-content-center github-icon"> Footer
+      <footer className="d-flex fixed-bottom justify-content-center footer">
         <a href="https://github.com/James-Brainard"><img src={gitLogo} width={50}/> </a>
         <a href="https://www.linkedin.com/in/james-brainard-565012252/"><img src={linkedinLogo} width={50} /></a>
-      </div>
+      </footer>
     </>
   )
 }

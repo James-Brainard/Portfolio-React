@@ -1,13 +1,14 @@
 import { Link, useLocation } from 'react-router-dom';
-import '../App.css'
+import '../App.css';
 // Return from Header function the HTML elements making up the header which is the NAVIGATION
 
 function Header() {
   const currentPage = useLocation().pathname;
   return (
     <>
-      <div className="d-flex name_header">
-        <h2>James</h2>
+      <div className="mb-5 d-flex justify-content-between name_header">
+        <h2 className="pe-5">James Brainard</h2>
+        {/* Move below into its own component */}
         <ul className="flex-row nav nav-tabs">
           <li className="nav-item">
             <Link
