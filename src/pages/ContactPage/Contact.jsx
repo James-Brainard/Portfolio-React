@@ -16,7 +16,6 @@ function Contact() {
         <p className="contact-number"> 623-824-3848 </p>
         <p className="contact-github">Please feel free to give my <a href="https://github.com/James-Brainard">GitHub</a> a peek.</p>
       </div>
-      {/* <BasicExample /> */}
     </>
   )
 }

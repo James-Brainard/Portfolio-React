@@ -11,12 +11,21 @@
   height: 100vh;
 }
 
+.welcome-msg {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: white;
+}
+
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }

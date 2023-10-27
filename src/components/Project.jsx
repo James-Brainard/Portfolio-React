@@ -9,7 +9,7 @@ function AboutProjects({ projects }) {
       {projects.map((project) => {
         const { title, githubLink, deployedLink, image, description } = project;
         return (
-          <Card className="mb-5" style={{ width: '18rem', background: 'black' }} key={title}>
+          <Card className="row mb-5 mt-3" style={{ width: '18rem', border: '1px white solid', background: 'black' }} key={title}>
             <Card.Img variant="top" src={image} />
             <Card.Body>
               <Card.Title>{title}</Card.Title>

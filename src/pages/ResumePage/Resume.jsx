@@ -13,31 +13,34 @@ function Resume() {
         {/* Find a way to add resume HIDE it then link below in the anchor tag */}
         <p>Download my <a>resume</a></p>
         <h5>Front-end proficiencies</h5>
-        <ul>
-          <li>
-            HTML
-          </li>
-          <li>
-            CSS
-          </li>
-          <li>
-            Javascript
-          </li>
-          <li>
-            jQuery
-          </li>
-          <li>
-            Responsive Design
-          </li>
-          <li>
-            React
-          </li>
-          <li>
-            Bootstrap
-          </li>
+        <ul className="container">
+            <div className="row">
+              <li className="my-skills">
+                HTML
+              </li>
+              <li>
+                CSS
+              </li>
+              <li>
+                Javascript
+              </li>
+              <li>
+                jQuery
+              </li>
+              <li>
+                Responsive Design
+              </li>
+              <li>
+                React
+              </li>
+              <li>
+                Bootstrap
+              </li>
+          </div>
         </ul>
         <h5>Back-end proficiencies</h5>
-          <ul>
+        <ul className="container">
+          <div className="row">
             <li>
               APIs
             </li>
@@ -59,7 +62,8 @@ function Resume() {
             <li>
               GraphQL
             </li>
-          </ul>
+          </div>
+        </ul>
       </div>
     </>
   )
