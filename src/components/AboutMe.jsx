@@ -5,7 +5,7 @@ function AboutCard({ information }) {
     <>
       <div className="m-0 container">
         <div className="row">
-          <h4 className="col-sm">
+          <h4>
             {information.title}
           </h4>
           <h3 className="welcome-msg">

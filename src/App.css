@@ -17,6 +17,13 @@
   color: white;
 }
 
+.skills li:hover {
+  transform: scale(1.1)
+}
+
+.skills {
+  list-style-type: none;
+}
 
 
 .logo {

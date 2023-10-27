@@ -16,8 +16,8 @@ function AboutProjects({ projects }) {
               <Card.Text>
                 {description}
               </Card.Text>
-              <Button className="mb-2" href={deployedLink} target="_blank" variant="primary">View Live</Button>
-              <Button href={githubLink} target="_blank" variant="secondary">View Code</Button>
+              <Button className="mb-2" href={deployedLink} target="_blank" variant="primary">View App</Button>
+              <Button href={githubLink} target="_blank" variant="secondary">View Repo</Button>
             </Card.Body>
           </Card>
         );

@@ -10,7 +10,6 @@ function Contact() {
   return (
     <>
       <div>
-        {/* h4 below can be a component for contact aboutme etc. Same with the two <p> tags */}
         <h4 className="container">Contact</h4>
         <p className="contact-email">james.brainard202@gmail.com</p>
         <p className="contact-number"> 623-824-3848 </p>
