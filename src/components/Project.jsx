@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 
 function AboutProjects({ projects }) {
   return (
-    <div className="main-container">
+    <div className="d-flex justify-content-between flex-wrap">
       {projects.map((project) => {
         const { title, githubLink, deployedLink, image, description } = project;
         return (

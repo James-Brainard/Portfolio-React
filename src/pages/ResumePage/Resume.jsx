@@ -1,10 +1,92 @@
-// return jsx for RESUME
-// download my "resume" clickable to download
-// Front-end Proficiencies - <ul> containing my Front end pros
-// Back-end Proficiencies - <ul> containing my Back end pros
-import React from 'react'
-import './Resume.modules.css'
+import React from 'react';
 import jbResume from '../../assets/james-resume.pdf';
+import './Resume.modules.css';
+import Marquee from "react-fast-marquee";
+// Import imgs for marquee effect
+import html from '../../images/marquee/html.svg';
+import css from '../../images/marquee/css.svg';
+import js from '../../images/marquee/javascript.svg';
+import bootStrap from '../../images/marquee/bootstrap.svg';
+import bulma from '../../images/marquee/bulma.svg';
+import express from '../../images/marquee/express.svg';
+import graphql from '../../images/marquee/graphql.svg';
+import handlebars from '../../images/marquee/handlebars.svg';
+import heroku from '../../images/marquee/heroku.svg';
+import jquery from '../../images/marquee/jquery.svg'; 
+import mongo from '../../images/marquee/mongo.svg';
+import mysql from '../../images/marquee/mysql.svg';
+import nodejs from '../../images/marquee/nodejs.svg';
+import react from '../../images/marquee/react.svg';
+
+const MarqueeEffect = () => {
+  return (
+    <Marquee
+      gradient={true}
+      speed={100}
+      pauseOnHover={true}
+      direction='right'
+      // style={{ height: "100px" }}
+      gradientColor='#2b5876'
+      >
+        <div>
+          <img className='marquee-img' src={html}></img>
+          <p>HTML</p>
+        </div>
+        <div>
+          <img className='marquee-img' src={css}></img>
+          <p>CSS</p>
+        </div>
+        <div>
+          <img className='marquee-img' src={js}></img>
+          <p>JavaScript</p>
+        </div>
+        <div>
+          <img className='marquee-img' src={bootStrap}></img>
+          <p>Bootstrap</p>
+        </div>
+        <div>
+          <img className='marquee-img' src={bulma}></img>
+          <p>Bulma</p>
+        </div>
+        <div>
+          <img className='marquee-img' src={express}></img>
+          <p>Express</p>
+        </div>
+        <div>
+          <img className='marquee-img' src={graphql}></img>
+          <p>GraphQL</p>
+        </div>
+        <div>
+          <img className='marquee-img' src={handlebars}></img>
+          <p>Handlebars</p>
+        </div>
+        <div>
+          <img className='marquee-img' src={heroku}></img>
+          <p>Heroku</p>
+        </div>
+        <div>
+          <img className='marquee-img' src={jquery}></img>
+          <p>jQuery</p>
+        </div>
+        <div>
+          <img className='marquee-img' src={mongo}></img>
+          <p>MongoDB</p>
+        </div>
+        <div>
+          <img className='marquee-img' src={mysql}></img>
+          <p>MySQL</p>
+        </div>
+        <div>
+          <img className='marquee-img' src={nodejs}></img>
+          <p>Node.js</p>
+        </div>
+        <div>
+          <img className='marquee-img' src={react}></img>
+          <p>React</p>
+        </div>
+      </Marquee>
+  )
+}
 
 function Resume() {
   return (
@@ -12,22 +94,25 @@ function Resume() {
       <div>
         <h4>Resume</h4>
         {/* Find a way to add resume HIDE it then link below in the anchor tag */}
-        <p>Download my <a href={jbResume} download="James Brainard Resume">resume</a></p>
+        <p className="download-resume">Download my <a className="resume-download" href={jbResume} download="James Brainard Resume">resume</a></p>
+        <div class="marquee-effect">
+          <MarqueeEffect />
+        </div>
         <div className="d-flex">
           <div className="container">
             <h5>Front-end proficiencies</h5>
             <ul className="skills container col-12 col-md-6">
                   <li>
-                    HTML
+                    HTML/CSS
                   </li>
                   <li>
-                    CSS
-                  </li>
-                  <li>
-                    Javascript
+                    Handlebars
                   </li>
                   <li>
                     jQuery
+                  </li>
+                  <li>
+                    Javascript
                   </li>
                   <li>
                     Responsive Design
@@ -36,7 +121,7 @@ function Resume() {
                     React
                   </li>
                   <li>
-                    Bootstrap
+                    Bootstrap/Bulma
                   </li>
             </ul>
           </div>
@@ -53,10 +138,10 @@ function Resume() {
                   Express
                 </li>
                 <li>
-                  MySQL, Sequelize
+                  MySQL/Sequelize
                 </li>
                 <li>
-                  MongoDB, Mongoose
+                  MongoDB/Mongoose
                 </li>
                 <li>
                   REST

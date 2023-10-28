@@ -3,7 +3,7 @@
 function AboutCard({ information }) {
   return (
     <>
-      <div className="m-0 container">
+      <div className="container">
         <div className="row">
           <h4>
             {information.title}
@@ -12,9 +12,9 @@ function AboutCard({ information }) {
             {information.welcome}
           </h3>
         </div>
-        <div className="container row">
+        <div className="container row justify-content-between">
           <img className="col-12 col-md-3 profile-img img-thumbnail" src={information.image} />
-          <p className="col-12 col-md-8 ml-50 about-me-description">
+          <p className="col-12 col-md-6 ml-50 about-me-description">
             {information.aboutmeDesc}
           </p>
         </div>
@@ -24,4 +24,4 @@ function AboutCard({ information }) {
 
 }
 
-export default AboutCard
+export default AboutCard;

@@ -24,16 +24,13 @@ const projectArr = [
     image: `${noteTakerImg}`,
     description: "A note taking application that allows you to create, edit, and delete notes.",
   },
-]
-
-const projectArr2 = [
   {
-      title: "Hammer Help Desk",
-      githubLink: "https://github.com/kyleochata/Hammer-Help-Desk",
-      deployedLink: "https://radiant-wave-47724-d875b64f42d0.herokuapp.com/",
-      image: `${hammerHelpDeskImg}`,
-      description: "Hammer Help Desk is a user intuitive ticketing application that leverages Express, Sequelize, Handlebars, MYSQL, JavaScript and Anime,js.",
-    }
+    title: "Hammer Help Desk",
+    githubLink: "https://github.com/kyleochata/Hammer-Help-Desk",
+    deployedLink: "https://radiant-wave-47724-d875b64f42d0.herokuapp.com/",
+    image: `${hammerHelpDeskImg}`,
+    description: "Hammer Help Desk is a user intuitive ticketing application that leverages Express, Sequelize, Handlebars, MYSQL, JavaScript and Anime,js.",
+  },
 ]
 
 
@@ -42,19 +39,8 @@ function Portfolio() {
   return (
     <>
       <h4>Portfolio</h4>
-      {/* pass in the array here for project component function */}
       <section className="container">
-        <div className="row">
-          <div className="container col-12 col-md-4">
             <AboutProjects projects={projectArr} />
-          </div>
-          <div className="container col-12 col-md-4">
-            <AboutProjects projects={projectArr2} />
-          </div>
-          {/* <div className="container col-12 col-md-4">
-            <AboutProjects projects={projectArr} />
-          </div> */}
-        </div>
       </section>
     </>
   )

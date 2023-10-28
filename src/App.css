@@ -9,6 +9,9 @@
   padding: 2rem;
   text-align: center;
   height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .welcome-msg {
@@ -21,8 +24,31 @@
   transform: scale(1.1)
 }
 
+.about-me-description {
+  text-align: left;
+}
+
+.resume-download {
+  text-decoration: none;
+}
+
 .skills {
   list-style-type: none;
+}
+
+.marquee-img {
+  max-width: 80px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.download-resume {
+  margin-top: 25px;
+}
+
+.marquee-effect {
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 
 

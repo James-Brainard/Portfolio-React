@@ -3,7 +3,6 @@
 // Contact Info for my Name - email - github
 // Render footer
 import React from 'react'
-// import BasicExample from '../../components/Contact'
 import './Contact.modules.css';
 
 function Contact() {

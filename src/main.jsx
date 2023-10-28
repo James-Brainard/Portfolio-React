@@ -11,21 +11,18 @@ import Aboutme from './pages/AboutPage/Aboutme.jsx';
 import Contact from './pages/ContactPage/Contact.jsx';
 import Portfolio from './pages/PortfolioPage/Portfolio.jsx';
 import Resume from './pages/ResumePage/Resume.jsx';
+import ErrorPage from './pages/ErrorPage/Error.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <Error />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
         element: <Aboutme />,
       },
-      // {
-      //   path: '/Aboutme',
-      //   element: <Aboutme />,
-      // },
       {
         path: '/Contact',
         element: <Contact />,
