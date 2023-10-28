@@ -27,6 +27,7 @@ const MarqueeEffect = () => {
       direction='right'
       // style={{ height: "100px" }}
       gradientColor='#2b5876'
+      gradientWidth='125px'
       >
         <div>
           <img className='marquee-img' src={html}></img>
@@ -95,7 +96,7 @@ function Resume() {
         <h4>Resume</h4>
         {/* Find a way to add resume HIDE it then link below in the anchor tag */}
         <p className="download-resume">Download my <a className="resume-download" href={jbResume} download="James Brainard Resume">resume</a></p>
-        <div class="marquee-effect">
+        <div className="marquee-effect">
           <MarqueeEffect />
         </div>
         <div className="d-flex">
@@ -157,4 +158,4 @@ function Resume() {
   )
 }
 
-export default Resume
+export default Resume;

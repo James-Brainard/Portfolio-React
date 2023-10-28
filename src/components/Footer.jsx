@@ -1,4 +1,3 @@
-// Footer needs to return HREF to my GITHUB and LinkedIn
 import gitLogo from '../images/github-logo.png';
 import linkedinLogo from '../images/Linkedin.png';
 
@@ -11,4 +10,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default Footer;

@@ -1,9 +1,5 @@
-// Build a component to map through my project array
-import React from 'react'
-// define array of objects for my projects. follow the same process for each.
+import React from 'react';
 import AboutProjects from '../../components/Project';
-// import each image
-// below {image1 etc}
 import textEditorImg from '../../images/text-editor-image.png';
 import noteTakerImg from '../../images/Note-taker.png';
 import hammerHelpDeskImg from '../../images/Hammer-helpDesk.png';
@@ -34,11 +30,10 @@ const projectArr = [
 ]
 
 
-// 
 function Portfolio() {
   return (
     <>
-      <h4>Portfolio</h4>
+      <h4 className="project-header">Portfolio</h4>
       <section className="container">
             <AboutProjects projects={projectArr} />
       </section>
@@ -46,4 +41,4 @@ function Portfolio() {
   )
 }
 
-export default Portfolio
+export default Portfolio;

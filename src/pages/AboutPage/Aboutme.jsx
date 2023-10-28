@@ -1,4 +1,3 @@
-// return div and p tag for "About me" avatar/pic & TEXT
 import React from 'react'
 import AboutCard from '../../components/AboutMe'
 import profilePic from '../../images/JB-photo.jpg';
@@ -13,12 +12,9 @@ const aboutInfo = {
 function Aboutme() {
   return (
     <>
-      {/* Create a new component for the below h4 and two p tags pass the props only once defined in the component */}
-      {/* <AboutCard headerText={aboutInfo.title} picPlaceholder={aboutInfo.placeholder} aboutMeDesc={aboutInfo.AboutmeDesc} />
-    </> */}
-    <AboutCard information={aboutInfo}/>
+      <AboutCard information={aboutInfo} />
     </>
   )
 }
 
-export default Aboutme
+export default Aboutme;
