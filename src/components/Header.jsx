@@ -1,6 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
 import '../App.css';
-// Return from Header function the HTML elements making up the header which is the NAVIGATION
 
 function Header() {
   const currentPage = useLocation().pathname;
