@@ -1,13 +1,29 @@
 import { Link, useLocation } from 'react-router-dom';
 import '../App.css';
+import { TypeAnimation } from 'react-type-animation';
+
+const HeaderAnimation = () => {
+  return (
+    <TypeAnimation
+      sequence={[
+        'James Brainard',
+        1000
+      ]}
+      style={{ fontSize: '2em', color: 'white'}}
+      repeat={Infinity}
+      wrapper="span"
+      loop={true}
+      cursor={true}
+    />
+  )
+}
 
 function Header() {
   const currentPage = useLocation().pathname;
   return (
     <>
       <div className="mb-5 d-flex justify-content-between name_header">
-        <h2 className="position-static pe-5">James Brainard</h2>
-        {/* Move below into its own component */}
+        <HeaderAnimation />
         <ul className="flex-row nav nav-tabs">
           <li className="nav-fill nav-item">
             <Link
@@ -23,16 +39,16 @@ function Header() {
             >
               Portfolio
             </Link>
-            </li>
-            <li className="nav-item">
+          </li>
+          <li className="nav-item">
             <Link
               to="/Contact"
               className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
             >
               Contact Me
             </Link>
-            </li>
-            <li className="nav-item">
+          </li>
+          <li className="nav-item">
             <Link
               to="/Resume"
               className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}

@@ -1,6 +1,5 @@
 import React from 'react';
 import jbResume from '../../assets/james-resume.pdf';
-import './Resume.modules.css';
 import Marquee from "react-fast-marquee";
 // Import imgs for marquee effect
 import html from '../../images/marquee/html.svg';
@@ -25,7 +24,6 @@ const MarqueeEffect = () => {
       speed={100}
       pauseOnHover={true}
       direction='right'
-      // style={{ height: "100px" }}
       gradientColor='#2b5876'
       gradientWidth='125px'
       >
@@ -94,7 +92,6 @@ function Resume() {
     <>
       <div>
         <h4>Resume</h4>
-        {/* Find a way to add resume HIDE it then link below in the anchor tag */}
         <p className="download-resume">Download my <a className="resume-download" href={jbResume} download="James Brainard Resume">resume</a></p>
         <div className="marquee-effect">
           <MarqueeEffect />

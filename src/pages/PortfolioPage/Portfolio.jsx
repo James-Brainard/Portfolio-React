@@ -34,7 +34,7 @@ function Portfolio() {
   return (
     <>
       <h4 className="project-header">Portfolio</h4>
-      <section className="container">
+      <section>
             <AboutProjects projects={projectArr} />
       </section>
     </>
