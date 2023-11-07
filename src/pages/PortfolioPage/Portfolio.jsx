@@ -3,6 +3,7 @@ import AboutProjects from '../../components/Project';
 import textEditorImg from '../../images/text-editor-image.png';
 import noteTakerImg from '../../images/Note-taker.png';
 import hammerHelpDeskImg from '../../images/Hammer-helpDesk.png';
+import willDoImg from '../../images/will-do.png';
 
 
 const projectArr = [
@@ -27,6 +28,13 @@ const projectArr = [
     image: `${hammerHelpDeskImg}`,
     description: "Hammer Help Desk is a user intuitive ticketing application that leverages Express, Sequelize, Handlebars, MYSQL, JavaScript and Anime,js.",
   },
+  {
+    title: "Will Do Crush Your Goals",
+    githubLink: "https://github.com/kyleochata/Will-DO-Crush-your-goals",
+    deployedLink: "https://will-do-7ujl.onrender.com/",
+    image: `${willDoImg}`,
+    description: "Will Do is an interactive MERN Stack goal setting application that transforms Will Do's into Should Do's.", 
+  }
 ]
 
 
