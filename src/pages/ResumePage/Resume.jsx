@@ -1,5 +1,5 @@
 import React from 'react';
-import jbResume from '../../assets/james-resume.pdf';
+import jbResume from '../../assets/JB-Resume.pdf';
 import Marquee from "react-fast-marquee";
 // Import imgs for marquee effect
 import html from '../../images/marquee/html.svg';
